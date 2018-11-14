@@ -3,14 +3,19 @@ import webbrowser, sys
 
 final_input = ""
 user_input = sys.argv[1:]
+check_input = sys.argv[1]
+
+if check_input == "-l":
+	print(" feeling lucky?")
+#END: check input
+
 for e in user_input:
 	final_input = final_input + e + "+"
 
 final_len = len(final_input) -1
 search = final_input[:int(final_len)]
-#print(" quack: " + search)
+print(" quack: " + search)
 webbrowser.open('https://duckduckgo.com/?q=' + search + '&t=h_&ia=web', new=2)
 
 if __name__ == "__main__":
     main()
-    
