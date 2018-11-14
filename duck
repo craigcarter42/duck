@@ -5,8 +5,8 @@ final_input = ""
 user_input = sys.argv[1:]
 check_input = sys.argv[1]
 
-if check_input == "-l":
-	print(" feeling lucky?")
+# if check_input == "-l":
+# 	print(" feeling lucky?")
 #END: check input
 
 for e in user_input:
